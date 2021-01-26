@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=DM+Sans:wght@400;500&display=swap');
+body{
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  position: relative;
+}
+
+.header{
+  background: black;
+  margin-bottom: 0;
+  padding-bottom: 20vh;
+  position: relative;
+  flex-grow: 3;
+}
+
+.header > .logo{
+  height:8vw;
+  width:8vw;
+  padding-left:1vw;
+  transition: 1s;
+}
+
+
+.header > .anthony{
+  height: 80%;
+  width: auto;
+  position: absolute;
+  bottom:0;
+  right:25vw;
+  transition: 1s;
+}
+
+
+.header > nav{
+  float: right;
+  text-decoration: none;
+  padding-top: 4.5vh;
+  padding-right: 1vw;
+}
+
+.header > nav > a {
+  font-family: 'Asap', sans-serif;
+  font-size: 2vw;
+  color: white;
+  background: black;
+  padding-left: 0.5vw;
+  padding-right:0.5vw;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.header > nav > a:hover{
+  color: black;
+  background: white;
+  transition: 0.7s;
+}
+
+.header > h1{
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+  padding-left: 15vw;
+  color: white;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  transition: 0.4s;
+}
+
+.header > p{
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+  padding-left: 15vw;
+  color: white;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  transition: 0.7s;
+}
+
+.header > .portfolio{
+  width:5%;
+  padding-left: 15vw;
+  transition: 1s;
+}
+
+.header > .portfolio > a{
+  font-family: 'Asap', sans-serif;
+  font-size: 2vw;
+  color: black;
+  background: white;
+  border: 0.25vw;
+  text-decoration: none;
+  margin-bottom: 4vh;
+  transition: 0.4s;
+  padding: 0.25vw;
+  padding-bottom: 0.5vh;
+}
+
+.header > .portfolio >a:hover{
+    color:white;
+    background:gray;
+    transition: 0.4s;
+    border: 0.25vw;
+}
+
+.about{
+  position: relative;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.about > h1{
+  font-family: 'Asap', sans-serif;
+  padding-left: 15vw;
+  transition: 0.4s;
+  font-size: 2vw;
+}
+
+.about > hr{
+  transition: 0.4s;
+}
+
+.about > p{
+  font-family: 'Asap', sans-serif;
+  padding-left: 15vw;
+  width: 35%;
+  font-size: 1vw;
+  transition: 0.7s;
+}
+
+.about > .aboutMe{
+  padding-left: 15vw;
+  transition: 1s;
+  padding-top: 1.25vh;
+  padding-bottom: 1.25vh;
+}
+
+.about > .aboutMe > a{
+  font-family: 'Asap', sans-serif;
+  font-size: 2vw;
+  color: white;
+  background: black;
+  border: 0.25vw;
+  text-decoration: none;
+  margin-bottom: 4vh;
+  padding: 0.25vw;
+  padding-bottom: 0.5vh;
+  transition: 1s;
+
+}
+
+.about > .aboutMe >a:hover{
+    color:white;
+    background:gray;
+    transition: 0.4s;
+    border: 0.25vw;
+}
+
+
+.about > .egg{
+  height: 100%;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 25vw;
+  transition: 1s;
+  box-shadow: 5px 3px 5px 0px black;
+}
+
+.footer{
+  background: black;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.footer> p{
+  color: white;
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.35vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  transition: 0.4s;
+}
+
+
+@media (max-width: 380px) {
+
+  body{
+    text-align: center;
+    padding: 0;
+  }
+
+  .about > p{
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 3.5vw;
+    transition: 0.7s;
+    padding-left: 0;
+}
+
+  .about > .aboutMe{
+    padding-left: 0;
+    margin: auto;
+  }
+
+  .about > .aboutMe > a{
+    font-size: 7vw;
+  }
+
+  .about > h1{
+    padding-left: 0;
+    font-size: 7vw;
+  }
+
+  .about > .egg{
+    display:none;
+  }
+
+  .anthony{
+    display: none;
+  }
+
+  .footer > p{
+    font-size: 3.5vw;
+  }
+
+}
