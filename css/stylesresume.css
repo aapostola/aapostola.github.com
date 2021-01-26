@@ -72,12 +72,13 @@ body{
   background: black;
   text-align: center;
   height: 25%;
+  padding-bottom: 1vw;
 }
 
 .content > a{
   font-family: 'Asap', sans-serif;
   font-size: 2vw;
-  color: white;
+  color: red;
   background: black;
   padding-left: 0.5vw;
   padding-right:0.5vw;
@@ -88,7 +89,7 @@ body{
 
 .content > a:hover{
     color:white;
-    background:gray;
+    background:red;
     transition: 0.4s;
     border: 0.25vw;
     border-radius: 0.5vw;
