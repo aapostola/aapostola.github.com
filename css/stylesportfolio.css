@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=DM+Sans:wght@400;500&display=swap');
+
+body{
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  position: relative;
+  font-family: 'Asap', sans-serif;
+}
+
+.header{
+  background: black;
+  margin-bottom: 0;
+  padding-bottom: 5vh;
+  position: relative;
+  height: 25%;
+}
+
+.header > .logo{
+  transition: 1s;
+}
+
+.header > nav{
+  text-decoration: none;
+  padding-top: 1vh;
+}
+
+.header > nav > a {
+  font-family: 'Asap', sans-serif;
+  font-size: 2vw;
+  color: white;
+  background: black;
+  padding-left: 0.5vw;
+  padding-right:0.5vw;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.header > nav > a:hover{
+  color: black;
+  background: white;
+  transition: 0.7s;
+}
+
+.header > h1{
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  transition: 0.4s;
+}
+
+/* This section is the core code for the gallery. Basically it does a transition when you hover that makes the text appear, and the background more opaque. Pretty cool! */
+.empty {
+    margin-bottom: 2.5vh;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 66vh;
+}
+
+.item a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: rgba(255, 0, 0, 0);
+    background-color: rgba(255, 0, 0, 0);
+    transition: .25s ease;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.item a:hover{
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: .25s ease
+}
+
+.one {
+    background: url(../images/PR_Intro.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.two {
+    background: url(../images/PR_Advertisement.png);
+    background-size: cover;
+    background-position: center;
+}
+.three {
+    background: url(../images/PR_Kinetic.png);
+    background-size: cover;
+    background-position: center;
+}
+.four {
+    background: url(../images/BW_Level.png);
+    background-size: cover;
+    background-position: center;
+}
+.five {
+    background: url(../images/PR_Background.png);
+    background-size: cover;
+    background-position: center;
+}
+.six {
+    background: url(../images/PR_TheBout.png);
+    background-size: cover;
+    background-position: center;
+}
+.seven {
+    background: url(../images/PR_PinDesign.png);
+    background-size: cover;
+    background-position: center;
+}
+.eight {
+    background: url(../images/BW_Design1.png);
+    background-size: cover;
+    background-position: center;
+}
+.nine {
+    background: url(../images/BW_Typography1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ten {
+    background: url(../images/PR_Magazine.png);
+    background-size: cover;
+    background-position: center;
+}
+.eleven {
+    background: url(../images/PR_Poster.png);
+    background-size: cover;
+    background-position: center;
+}
+.twelve {
+    background: url(../images/PR_Resume.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.otherlightbox{
+  display: none;
+}
+
+.footer> p{
+  color: white;
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.35vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  transition: 0.4s;
+}
+
+.footer > p > a{
+  color: cyan;
+  text-decoration: none;
+}
+
+.footer > p > a:hover{
+  background:#666;
+  transition: 0.4s;
+  border: 0.25vw;
+}
+
+@media (max-width: 480px) {
+
+  body{
+    padding: 0;
+  }
+
+  .logo{
+    height: 14vw;
+    width: 14vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .header{
+    padding-bottom: 0;
+  }
+
+  .header > nav{
+    text-align: center;
+    display: inline-block;
+    padding-left: 3%;
+    padding-top: 2vw;
+  }
+
+  .header > nav > a{
+    font-size: 6vw;
+  }
+
+  .header > h1 {
+    text-align: center;
+    font-size: 5vw;
+    padding-top: 2vh;
+  }
+
+  .gallery{
+      width: 95%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  .footer > p{
+    font-size: 3.5vw;
+  }
+
+
+
+}
+
+@media (min-width: 481px) {
+
+  .header > .logo{
+    height: 8vw;
+    width: 8vw;
+    padding-left:1vw;
+  }
+
+  .header > nav {
+    float: right;
+    text-decoration: none;
+    padding-top: 4.5vh;
+    padding-right: 1vw;
+    font-size: 2vw;
+  }
+
+}
