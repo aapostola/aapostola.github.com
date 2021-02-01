@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/stylesresume.css">
+  <link rel="stylesheet" href="css/stylesportfolio.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <script src="js/lightbox-plus-jquery.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
   <title>Portfolio</title>
 </head>
 
@@ -23,11 +26,59 @@
 
     <h1>Portfolio</h1>
 
-    <h1>Still a work in progress.</h1>
+    <div class="empty">
+      <!-- This is the gallery for my portfolio. On the front end, it contains a link using lightbox. -->
+      <div class="gallery">
+        <div class="item one">
+          <a href="https://www.youtube.com/watch?v=BRErp3XQmX0" target="_blank">ANIMATED INTRO</a>
+        </div>
+        <div class="item two">
+          <a href="https://www.youtube.com/watch?v=fDdC5yWERMg" target="_blank">CAWD ADVERTISEMENT</a>
+        </div>
+        <div class="item three">
+          <a href="https://www.youtube.com/watch?v=38cAQmYzQSQ" target="_blank">KINETIC TYPOGRAPHY</a>
+        </div>
+        <div class="item four">
+          <a href="images/BW_Level.png" data-lightbox="BW_Level" data-title="A very simple 3d level design created in Unreal Engine 4. Enjoyed the photography more than the level itself.">3D PLATFORMER LEVEL</a>
+        </div>
+        <div class="item five">
+          <a href="images/BW_Background.png" data-lightbox="BW_Background" data-title="Turned the CAWD logo into a satisfying backgound in Blender using exclusively hexagons.">3D BACKGROUND</a>
+        </div>
+        <div class="item six">
+          <a href="https://www.youtube.com/watch?v=Vnw-znklrAI" target="_blank">THE BOUT</a>
+        </div>
+        <div class="item seven">
+          <a href="images/BW_PinDesign.png" data-lightbox="BW_PinDesign" data-title="A pin design I completed in Illustrator. I took a more laid-back approach, but the design decisions ultimately led to a very well crafted result.">PIN DESIGN</a>
+        </div>
+        <div class="item eight">
+          <a href="images/BW_Design1.png" data-lightbox="BW_Design" data-title="CAWD Design inspired by futuristic logos and streamer headers. The kana at the top and bottom say CAWD and ANIMATION.">CAWD HOODIE DESIGN</a>
+        </div>
+        <div class="item nine">
+          <a href="images/BW_Typography1.jpg" data-lightbox="BW_Typography" data-title="A gamecube controller typography project built in Illustrator. The color of the controller is Symphonic Green, a very rare gamecube controller color, and the gamecube shell in the typography is made up of gamecube games.">TYPOGRAPHY ART</a>
+        </div>
+        <div class="item ten">
+          <a href="images/BW_Magazine.png" data-lightbox="BW_Magazine" data-title="A magazine I created during the development of The Bout. This project taught me a bunch about InDesign.">MAGAZINE</a>
+        </div>
+        <div class="item eleven">
+          <a href="images/BW_Poster.png" data-lightbox="BW_Poster" data-title="A movie poster I completed in Photoshop. Inspired by the action movies of old.">MOVIE POSTER</a>
+        </div>
+        <div class="item twelve">
+          <a href="images/BW_Resume.jpg" data-lightbox="BW_Resume" data-title="A slick resume made in Photoshop. Inspired by the late Pizza Putt, a now defunct arcade.">RESUME</a>
+        </div>
+
+      </div>
+
+    </div>
 
     <div class="footer">
-      <p>anthony apostol | anthonywapostol@gmail.com | 802-777-2011</p>
+      <p>anthony apostol | <a href = "mailto:anthonywapostol@gmail.com">anthonywapostol@gmail.com</a> | <a href="tel:802-777-2011">802-777-2011</a></p>
     </div>
+  </div>
+  <!-- This container is used so these don't accidentally show up on the actual div. These contain the additional images for my portfolio if needed.  -->
+  <div class="otherlightbox">
+      <a href="images/BW_Design2.png" data-lightbox="BW_Design" data-title="The backside of the of the CAWD Hoodie, meant to supplement the first design. I like the approach of this design."></a>
+      <a href="images/BW_Design3.png" data-lightbox="BW_Design" data-title="Alternative frontside design for the CAWD hoodie. I didn't really know what I was doing, but now it kinda looks like a brewery logo.">CAWD HOODIE DESIGN</a>
+      <a href="images/BW_Typography2.png" data-lightbox="BW_Typography" data-title="A typography project built in Illustrator, modeled off of Ken's render from Super Smash Brothers Ultimate."></a>
   </div>
 </body>
 
